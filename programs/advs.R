@@ -1,7 +1,7 @@
 ## ------------------------------------------------------
 ## Script name:
 ## Project: hackathon
-## Purpose of script: to create ADaM ADVS domain
+## Purpose of script: to create ADaM, ADVS domain
 ## Input file:
 ## Output file: Output file
 ## Author: Leo Li
@@ -16,9 +16,32 @@
 ## ------------------------------------------------------
 
 
-install.packages("usethis")
+##Setting working environment----------------------------
+options(repos = c(
+  pharmaverse = 'https://pharmaverse.r-universe.dev',
+  CRAN = 'https://cloud.r-project.org'))
+
+pkgs<-c("usethis","metacore","metatools","admiral.test","admiral","xportr","dplyr","tidyr","lubridate","stringr")
+install.packages(pkgs)
+
 usethis::use_git_config(user.name ="soli@genmab.com",
                         user.email="soli@genmab.com")
 usethis::create_github_token()
 
 gitcreds::gitcreds_set()
+
+
+
+##load packages ----------------------------------------
+library(metacore)
+library(metatools)
+library(admiral.test)
+library(admiral)
+library(xportr)
+library(dplyr)
+library(tidyr)
+library(lubridate)
+library(stringr)
+
+
+
