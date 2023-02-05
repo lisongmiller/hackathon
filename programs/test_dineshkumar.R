@@ -1,10 +1,10 @@
 ## ------------------------------------------------------
 ## Script name:
 ## Project: hackathon
-## Purpose of script: to create ADaM ADVS domain
+## Purpose of script: to create ADaM xxxxxxxxx domain
 ## Input file:
 ## Output file: Output file
-## Author: Leo Li
+## Author: xxxxxxxxx
 ## Date Created: 2023-02-05
 ##
 ## ------------------------------------------------------
