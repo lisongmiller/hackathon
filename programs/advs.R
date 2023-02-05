@@ -1,7 +1,7 @@
 ## ------------------------------------------------------
 ## Script name:
 ## Project: hackathon
-## Purpose of script: to create ADaM, ADVS domain
+## Purpose of script: to create ADaM ADVS domain
 ## Input file:
 ## Output file: Output file
 ## Author: Leo Li
@@ -16,7 +16,7 @@
 ## ------------------------------------------------------
 
 
-##Setting working environment----------------------------
+## Setting working environment----------------------------
 options(repos = c(
   pharmaverse = 'https://pharmaverse.r-universe.dev',
   CRAN = 'https://cloud.r-project.org'))
@@ -32,7 +32,7 @@ gitcreds::gitcreds_set()
 
 
 
-##load packages ----------------------------------------
+## load packages ----------------------------------------
 library(metacore)
 library(metatools)
 library(admiral.test)
@@ -42,6 +42,12 @@ library(dplyr)
 library(tidyr)
 library(lubridate)
 library(stringr)
+library(haven)
+getwd()
+
+## Read in input SDTM data-------------------------------
+vs<-read_xpt("./sdtm/vs.xpt")
 
 
-
+metacore <- readxl::read_xlsx("./metadata/specs.xlsx",sheet = "Variables") %>%
+  filter(Dataset == "ADVS")
