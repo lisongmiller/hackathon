@@ -1,5 +1,23 @@
-"hello world"
+## ------------------------------------------------------
+## Script name:
+## Project: hackathon
+## Purpose of script: to create ADaM ADVS domain
+## Input file:
+## Output file: Output file
+## Author: Leo Li
+## Date Created: 2023-02-05
+##
+## ------------------------------------------------------
+## Revision History:
+## Date:
+## Author:
+## Description of the change
+##
+## ------------------------------------------------------
+
 install.packages("usethis")
+
+###Please change to your own user name to login
 usethis::use_git_config(user.name ="dineshkumarchenna",
                         user.email="cdineshkumarr@gmail.com")
 
